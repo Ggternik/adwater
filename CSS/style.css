@@ -1,0 +1,85 @@
+body{
+text-align: center;
+background-color: white;
+
+}
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+li{
+    list-style: none;
+}
+.imagen_logo{
+    height: 100px;
+    width: 100px;
+}
+
+
+/* nav */
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+header nav ul li {
+    margin-right: 30px;
+    margin-top: 40px;
+}
+
+header nav ul li a{
+    color: black;
+    font-weight: bold;
+}
+
+/* Galeria */
+
+img{
+    width: 150px;
+    height: 150px;
+}
+
+.galeria {
+    margin-top: 100px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media (max-width: 650px) {
+    .galeria {
+      display: flex;
+      flex-direction: column;
+    }
+    .imagenes{
+        margin-bottom: 30px;
+    }
+  }
+
+/* mision vision objetivo politicas */
+
+.mivi, .objpc, .soag {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.hacetupedido {
+    align-items: center;
+}
+
+.parrafo{
+    width: 50%;
+}
