@@ -67,13 +67,20 @@ img{
 
 /* mision vision objetivo politicas */
 
-.mivi, .objpc, .soag {
+.mivi, .objpc{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     margin-top: 20px;
 
+}
+
+.soag{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .hacetupedido {
