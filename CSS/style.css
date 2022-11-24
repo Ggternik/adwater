@@ -1,22 +1,55 @@
-body{
-text-align: center;
-background-color: white;
+body {
+    /* font-family: ; */
+    color: black;
+    background: white;
 
 }
-a:link, a:visited, a:active {
-    text-decoration:none;
+
+h2 {
+    font-size: xx-large;
 }
 
-li{
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+li {
     list-style: none;
 }
-.imagen_logo{
-    height: 100px;
-    width: 100px;
+
+.imagen_logo {
+    height: 150px;
+    width: 200px;
+    margin-left: 50px;
+}
+
+.imagen_adwater {
+    margin-right: 400px;
+}
+
+@media (max-width: 900px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .imagen_adwater {
+        margin-right: 0;
+    }
+
 }
 
 
 /* nav */
+
+
+
+.boton3d {
+    color: red;
+}
 
 header nav {
     display: flex;
@@ -27,66 +60,160 @@ header nav {
 header nav ul {
     display: flex;
     flex-direction: row;
-    
+
 }
 
 header nav ul li {
     margin-right: 30px;
-    margin-top: 40px;
+    margin-top: 56px;
 }
 
-header nav ul li a{
+header nav ul li a {
     color: black;
     font-weight: bold;
+    font-size: 15px;
 }
+
 
 /* Galeria */
 
-img{
-    width: 150px;
-    height: 150px;
+img {
+    width: 800px;
+    height: 400px;
+    margin-bottom: 100px;
+
 }
 
 .galeria {
-    margin-top: 100px;
     align-items: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
 }
 
 @media (max-width: 650px) {
-    .galeria {
-      display: flex;
-      flex-direction: column;
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+
+
     }
-    .imagenes{
+
+    header nav ul li {
+        margin-top: 10px;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .imagen_logo {
+        margin: 0px;
+    }
+
+    iframe {
+        display: flex;
+        width: 100%;
         margin-bottom: 30px;
     }
-  }
+
+    nav {
+        align-items: center;
+
+    }
+
+    .formcont {
+        margin-right: 50px;
+    }
+
+}
+
+.formcont {
+    border: 1px black solid;
+    padding: 30px;
+}
 
 /* mision vision objetivo politicas */
 
-.mivi, .objpc{
+.parrafo {
+    margin: 10px;
+    padding: 5px;
+}
+
+.mivi,
+.objpc {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     margin-top: 20px;
+    text-align: center;
 
 }
 
-.soag{
+.soag {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
+    margin-top: 100px;
+
+}
+
+
+
+.parrafo {
+    width: 45%;
 }
 
 .hacetupedido {
-    align-items: center;
+    text-align: center;
+    margin-top: 100px;
 }
 
-.parrafo{
-    width: 50%;
+/* footer redes */
+
+.redes {
+    display: flex;
+    flex-direction: row;
+}
+
+.redes a {
+    margin-right: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+iframe {
+    margin-bottom: 100px;
+}
+
+@keyframes texto {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 25%;
+    }
+
+    50% {
+        opacity: 50%;
+    }
+
+    75% {
+        opacity: 75%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+p {
+    animation-name: texto;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
 }
